@@ -456,73 +456,6 @@ section{
 .sql { width: 85%; background-color: #2196F3; }
 .git { width: 80%; background-color: #FF9800; }
 
-/* Chatbot Window */
-.chatbot-window {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 400px;
-  height: 500px;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  z-index: 1000;
-  flex-direction: column;
-}
-
-.chatbot-header {
-  background-color: rgb(109,67,0);
-  color: white;
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-radius: 8px 8px 0 0;
-}
-
-.chatbot-header button {
-  height: 30px;
-  width: 30px;
-  border-radius: 15px;
-  font-weight: bold;
-  border: 1.2rem;
-}
-
-.chatbot-body {
-  padding: 10px;
-  overflow-y: scroll;
-  flex-grow: 1;
-}
-
-.chatbot-footer {
-  display: flex;
-  padding: 10px;
-  background-color: #f1f1f1;
-  border-radius: 0 0 8px 8px;
-}
-
-.chatbot-footer input {
-  width: 80%;
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #ddd;
-}
-
-.chatbot-footer button {
-  width: 15%;
-  padding: 10px;
-  margin-left: 10px;
-  background-color: rgb(109,67,0);
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.chatbot-footer button:hover {
-  background-color: rgb(6, 245, 77);
-}
 
 .container {
   display: flex;
@@ -616,75 +549,95 @@ footer .contact-footer a {
 footer .contact-footer a:hover {
   text-decoration: underline;
 }
+#chatbot-icon {
+  position: fixed;
+  bottom: 200px;
+  right: 20px;
+  color: rgb(109,67,0);
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  border: solid rgb(109,67,0);
+}
 
-.chat-container {
+#chatbot-icon i {
+  font-size: 40px;
+}
+
+.chatbot-window {
+  display: none;
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
   width: 600px;
-  background-color: #ffffff; /* Set the background color */
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+  height: 700px;
+  background-color: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
   display: flex;
   flex-direction: column;
-  height: 550px;
-  border: 2px solid #4CAF50; /* Add a green border */
-
+  border-radius: 10px;
 }
 
-.chat-box {
-  flex-grow: 1;
-  overflow-y: auto;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  height: 350px;
-  background-color: #f0f0f0; /* Set the background color for the chat area */
-}
-
-.input-container {
-  display: flex;
-}
-
-.input-container input {
-  width: 80%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.input-container button {
-  width: 20%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  background-color: #4CAF50;
+.chatbot-header {
+  background-color: rgb(109,67,0);
   color: white;
-  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px 10px 0 0;
+}
+
+.chatbot-body {
+  padding: 10px;
+  flex: 1;  
+  overflow-y: auto;
+}
+
+.chatbot-footer {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0 0 10px 10px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.chatbot-footer input {
+  flex: 1;
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.chatbot-footer button {
+  background-color: rgb(109,67,0);
+  color: white;
+  border: none;
+  padding: 5px 10px;
   cursor: pointer;
 }
 
-.input-container button:hover {
-  background-color: #45a049;
-}
-
-.message {
-  margin-bottom: 10px;
+.chatbot-message {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 80%;
 }
 
 .user-message {
-  text-align: right;
-  background-color: #e0e0e0;
-  padding: 10px;
-  border-radius: 10px;
-  max-width: 80%;
-  margin-left: auto;
+  background-color: #f1f1f1;
+  align-self: flex-end;
 }
 
 .bot-message {
-  text-align: left;
-  background-color: #4CAF50;
+  background-color: rgb(109,67,0);
   color: white;
-  padding: 10px;
-  border-radius: 10px;
-  max-width: 80%;
-  margin-right: auto;
+  align-self: flex-start;
 }
+
