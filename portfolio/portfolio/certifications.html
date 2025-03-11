@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>Luyanda_Xhakaza_Portfolio</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000"><span>Luyanda Xhakaza</span></div>
+            <div class="links">
+                <div><a href="index.html">Home</a></div>
+                <div><a href="about.html">About Me</a></div>
+                <div><a href="skills.html">Skills</a></div>
+                <div><a href="#certifications">Certifications</a></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Certificate Section -->
+    <section class="certifications-section">
+        <div class="certifications-container">
+            <h2 class="certifications-title">Certificates</h2>
+            <!-- Brief Intro Text -->
+            <p class="certifications-intro">
+                Below are some of the certifications I have earned throughout my journey. These certificates showcase my dedication to continuous learning and improving my skills in various areas of technology. Click on each certificate to view it in full size.
+            </p>
+            <div class="certificates-grid">
+                <!-- Certificate 1 -->
+                <div class="certificate-item" onclick="openModal('IMG_5180.jpeg')">
+                    <img src="IMG_5180.jpeg" alt="Certificate 1">
+                    <p class="certificate-date">Received on April 28, 2023</p>
+                </div>
+                <!-- Certificate 2 -->
+                <div class="certificate-item" onclick="openModal('IMG_5179.jpeg')">
+                    <img src="IMG_5179.jpeg" alt="Certificate 2">
+                    <p class="certificate-date">Received on Mar 30, 2023</p>
+                </div>
+                <!-- Certificate 3 -->
+                <div class="certificate-item" onclick="openModal('IMG_5181 (1).jpeg')">
+                    <img src="IMG_5181 (1).jpeg" alt="Certificate 3">
+                    <p class="certificate-date">Received on Oct 1-2, 2022</p>
+                </div>
+                <!-- Certificate 4 -->
+                <div class="certificate-item" onclick="openModal('IMG_5181.jpeg')">
+                    <img src="IMG_5181.jpeg" alt="Certificate 4">
+                    <p class="certificate-date">Received on Aug 27-28, 2022</p>
+                </div>
+                <!-- Certificate 5 -->
+                <div class="certificate-item" onclick="openModal('IMG_5183.jpeg')">
+                    <img src="IMG_5183.jpeg" alt="Certificate 5">
+                    <p class="certificate-date">Received on Sep 18, 2022</p>
+                </div>
+                <!-- Certificate 6 -->
+                <div class="certificate-item" onclick="openModal('IMG_5184.jpeg')">
+                    <img src="IMG_5184.jpeg" alt="Certificate 6">
+                    <p class="certificate-date">Received on Mar 10, 2023</p>
+                </div>
+                <!-- Certificate 7 -->
+                <div class="certificate-item" onclick="openModal('IMG_5186.jpeg')">
+                    <img src="IMG_5186.jpeg" alt="Certificate 7">
+                    <p class="certificate-date">Received on Mar 10, 2023</p>
+                </div>
+                <!-- Certificate 8 -->
+                <div class="certificate-item" onclick="openModal('IMG_5187.jpeg')">
+                    <img src="IMG_5187.jpeg" alt="Certificate 8">
+                    <p class="certificate-date">Received on Aug, 2024</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for displaying full certificate image -->
+    <div id="modal" class="modal" onclick="closeModal()">
+        <img id="modal-img" src="" alt="Full Certificate" />
+    </div>
+
+    <script>
+        // Open modal with the clicked image
+        function openModal(imageSrc) {
+            document.getElementById("modal").style.display = "flex";
+            document.getElementById("modal-img").src = imageSrc;
+        }
+
+        // Close modal when clicking outside the image
+        function closeModal() {
+            document.getElementById("modal").style.display = "none";
+        }
+    </script>
+</body>
+</html>
