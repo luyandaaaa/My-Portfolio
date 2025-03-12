@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
     <title>Luyanda_Xhakaza_Portfolio</title>
     <link href="style.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/751f8ac285.js" crossorigin="anonymous"></script>
@@ -15,12 +14,10 @@
         <div class="nav-container">
             <div class="logo" data-aos="zoom-in" data-aos-duration="1000"><span>Luyanda Xhakaza</span></div>
             <div class="links">
-                <div><a href="#home">Home</a></div>
+                <div><a href="#home" class="active">Home</a></div>
                 <div><a href="about.html">About Me</a></div>
                 <div><a href="skills.html">Skills</a></div>
                 <div><a href="certifications.html">Certifications</a></div>
-                <div><a href="Chat_to_us.html">Chatbot</a></div>
-
             </div>
         </div>
     </nav>
@@ -30,23 +27,26 @@
                 <img src="main.jpeg" alt="">
             </div>
             <div class="content">
-                <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">Hey I'm <span>Luyanda</span></h1>
+                <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">Hi there I'm <span>Luyanda!</span></h1>
                 <div class="typewriter" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">I'm a <span></span></div>
                 <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">
-                    I am a self-motivated and goal-oriented graduand who is strategic, eager to learn,
-                    and improve with every opportunity. My communication and leadership abilities allow me to
-                    collaborate well with others. I seek challenging opportunities where I can fully utilize my
-                    skills for the success of the organization.
+                    I am a self-motivated and goal-oriented graduand who is passionate, eager to learn,
+                    and improve within every opportunity. Dive into my portfolio to explore my skills, work,
+                    qualification and most importantly get to know more about me.
+                    Let's connect and create something amazing!.
                 </p>
                 <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
                     <a href="https://github.com/luyandaaaa"><i class="fa-brands fa-github"></i></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/luyanda8289?igsh=MW0zazFnMHczMm14aA%3D%3D&utm_source=qr"><i class="fa-brands fa-instagram"></i></a>
                     <a href="https://www.linkedin.com/in/luyanda-xhakaza-0505b4255?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class="fa-brands fa-linkedin"></i></a>
                     <a href="mailto:lloyiswa2003@gmail.com"><i class="fa-solid fa-envelope"></i></a>
                 </div>
                 <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
-                    <button>Download CV</button>
+                    <a href="/portfolio/luyanda_xhakaza.pdf" download="luyanda_xhakaza.pdf">
+                      <button>Download CV</button>
+                    </a>
                 </div>
+                  
             </div>
         </div>
     </section>
@@ -66,6 +66,7 @@
         </div>
         <div class="chatbot-footer">
             <input type="text" id="chatbot-input" placeholder="Type a message..." />
+            <div id="suggestions-container"></div>
             <button onclick="sendMessage()">Send</button>
         </div>
     </div>

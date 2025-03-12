@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
     <title>Luyanda_Xhakaza_Portfolio</title>
     <link href="style.css" rel="stylesheet">
+
 </head>
 <body>
     <nav>
@@ -15,8 +16,7 @@
                 <div><a href="index.html">Home</a></div>
                 <div><a href="about.html">About Me</a></div>
                 <div><a href="skills.html">Skills</a></div>
-                <div><a href="#certifications">Certifications</a></div>
-                <div><a href="Chat_to_us.html">Chatbot</a></div>
+                <div><a href="#certifications" class="active">Certifications</a></div>
             </div>
         </div>
     </nav>
@@ -79,17 +79,8 @@
         <img id="modal-img" src="" alt="Full Certificate" />
     </div>
 
-    <script>
-        // Open modal with the clicked image
-        function openModal(imageSrc) {
-            document.getElementById("modal").style.display = "flex";
-            document.getElementById("modal-img").src = imageSrc;
-        }
+    <script src="index.js"></script>
 
-        // Close modal when clicking outside the image
-        function closeModal() {
-            document.getElementById("modal").style.display = "none";
-        }
-    </script>
+ 
 </body>
 </html>
