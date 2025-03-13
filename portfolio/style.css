@@ -250,8 +250,7 @@ section{
   right: 20px;
   width: 600px;
   height: 700px;
-  background-color: white;
-  border: 1px solid #ddd;
+  background-color: rgb(253, 253, 253);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   z-index: 1000;
   flex-direction: column;
@@ -301,24 +300,56 @@ section{
   background-color:burlywood;
 }
 .chatbot-message {
+  display: flex;
+  align-items: center;
   margin: 10px 0;
   padding: 10px;
   border-radius: 10px;
   max-width: 80%;
   word-wrap: break-word;
+  position: relative; 
 }
 .user-message {
-  background-color: #f1f1f1;
+  background-color: #d8d7d7;
   align-self: flex-end;
+  flex-direction: row-reverse;
+  display: flex;
+  justify-content: flex-end; /* Keeps the text aligned properly */
+  align-items: center;
+  text-align: right;
+  border-radius: 10px;
+  position: relative;
 }
 .bot-message {
   background-color: #d49494;
   color: white;
   align-self: flex-start;
+  flex-direction: row;
+  margin-left: 60px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
 }
 .chatbot-header,
 .chatbot-footer {
   flex: none;
+}
+.chatbot-message img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+  margin-left: 10px;
+}
+.user-message img {
+  margin-right: 10px; /* Position the user's icon on the left */
+  border: 3px solid rgb(20, 20, 20);
+  position: absolute;
+  left: 500px; /* Move the image outside the speech bubble */
+}
+.bot-message img {
+  margin-left: -65px; /* Position the bot's icon on the left */
+  border: 3px solid rgb(17, 17, 17);
 }
 #suggestions-container {
   border: 1px solid #ccc;
@@ -331,12 +362,10 @@ section{
   bottom: 50px; 
   left: 10px; 
 }
-
 .suggestion-item {
   padding: 10px;
   cursor: pointer;
 }
-
 .suggestion-item:hover {
   background-color: #f0f0f0;
 }
