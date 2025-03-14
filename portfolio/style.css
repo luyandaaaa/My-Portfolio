@@ -600,7 +600,7 @@ section{
   width: 150%;
 }
 .card {
-  background: #f9f9f9;
+  background: #ebcaca;
   padding: 20px;
   margin-bottom: 20px;
   border-radius: 10px;
@@ -608,6 +608,15 @@ section{
   width: 100%;
   flex: 1 1 48%; 
 }
+.card h1{
+  font-family: 'Courier New', Courier, monospace;
+  font-style: italic;
+}
+.card-container h2{
+  font-family: 'Courier New', Courier, monospace;
+  font-style: italic;
+}
+
 /* Make sure it stacks properly on small screens */
 @media (max-width: 768px) {
   .container {
