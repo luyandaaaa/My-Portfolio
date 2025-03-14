@@ -72,7 +72,7 @@ function openChatbot() {
     // Display the greeting message
     chatbotBody.innerHTML += `
     <div class="chatbot-message bot-message">
-        <img src="/portfolio/bot.jpg" alt="Bot" />
+        <img src="/bot.jpg" alt="Bot" />
         <p>Hello! I'm here to help you with information about my portfolio. Ask me anything!</p>
     </div>`;
 
@@ -104,7 +104,7 @@ function sendMessage() {
    // Display user's message with icon
    chatbotBody.innerHTML += `
    <div class="chatbot-message user-message">
-     <img src="/portfolio/user.jpg" alt="User" />
+     <img src="/user.jpg" alt="User" />
      <p>${userMessage}</p>
    </div>
     `;
@@ -115,7 +115,7 @@ function sendMessage() {
  // Display chatbot's response with icon
     chatbotBody.innerHTML += `
    <div class="chatbot-message bot-message">
-     <img src="/portfolio/bot.jpg" alt="Bot" />
+     <img src="/bot.jpg" alt="Bot" />
      <p>${response}</p>
    </div>
     `;
