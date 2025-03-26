@@ -76,7 +76,7 @@ My-Portfolio/
 **Core Technologies:**
 - HTML5 (Semantic Structure)
 - CSS3 (Flexbox/Grid Layouts)
-- JavaScript (ES6+ Features)
+- JavaScript 
 
 **Integrations:**
 - Font Awesome 6.7.1 (Icons)
