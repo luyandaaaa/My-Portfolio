@@ -92,7 +92,7 @@ My-Portfolio/
 ```bash
 git clone https://github.com/luyandaaaa/My-Portfolio.git
 
-License
+##License
 This project is licensed under the MIT License - free for personal and commercial use with attribution.
 
 📬 Contact: lloyiswa2003@gmail.com
