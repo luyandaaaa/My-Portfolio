@@ -4,7 +4,7 @@
 [![Live Demo](https://img.shields.io/badge/View-Live%20Demo-brightgreen)](https://tangerine-heliotrope-2fcc1f.netlify.app/)
 [![GitHub](https://img.shields.io/github/license/luyandaaaa/My-Portfolio)](LICENSE)
 
-![Portfolio Preview](main.jpeg)
+![Portfolio Preview](profileq.jpeg)
 
 Welcome to my interactive professional portfolio showcasing my technical skills, academic achievements, and professional certifications. This responsive website features chatbot assistant to enhance user engagement.
 
